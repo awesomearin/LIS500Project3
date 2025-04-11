@@ -4,20 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML 5 Boilerplate</title>
+    <title>LIS500 Project 3 Statement</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     
     <!-- Header Section -->
     <header class="site-header">
-      <h1>Welcome to My Website</h1>
+      <h1>LIS500 Project 3</h1>
       <nav>
         <ul class="nav-menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Our Machine</a></li>
         </ul>
       </nav>
     </header>
@@ -26,24 +24,42 @@
     <main class="main-content">
       <section class="intro-section">
         <h2>Introduction</h2>
-        <p>This is a sample website built using HTML5 and a custom CSS stylesheet. It demonstrates responsive layout, navigation, and clean design using modern CSS techniques.</p>
+        <p>This is a voice classifier that is browser-based and can identify interjections—short bursts of emotion like "wow!", "ugh!", or "huh?"—and classify them as expressions of positiveness, negativity, or wonder. The app uses a Teachable Machine sound model that has been trained to identify these speech indicators and automatically respond with the related emoji. 
+          Technically speaking, this was built with the ml5.js library, a wrapper for TensorFlow.js that's dedicated to taking machine learning into the browser. The model was trained using Google's Teachable Machine, which is a low-code/no-code tool that allows users to develop sound or image classifiers by training it on labeled examples.
+          The purpose of this activity was not only to understand how machine learning models function, but to also critique their ethical and cultural implications—particularly through the lens of Joy Buolamwini’s Unmasking AI. This juxtaposition—building a model while reflecting on the dangers of biased models—was at the heart of the learning experience.</p>
         <button class="button">Learn More</button>
       </section>
 
       <section class="person">
-        <div class="personimage">
-          <img src="https://via.placeholder.com/300" alt="Tech Hero" />
-        </div>
         <div class="persontext">
-          <h2>Tech Hero: Ada Lovelace</h2>
-          <p>Ada Lovelace is considered the world's first computer programmer. Her work on Charles Babbage's proposed mechanical general-purpose computer laid the groundwork for modern computing.</p>
+          <h2>Reflections on Unmasking AI</h2>
+          <p>Joy Buolamwini's book, Unmasking AI, is a wake-up call for anyone implementing machine learning. Who is this for? Who gets left behind? And who could get harmed by the way this model acts—or doesn't act?
+            Buolamwini’s story about how facial recognition systems failed to recognize her as a Black woman until she wore a white mask is chilling. It’s not just a bug—it’s a signal that the system wasn’t designed with her in mind. In our case, the stakes are lower: our classifier only displays emojis. But even this trivial system reveals cracks in fairness. 
+            When it was tested on other voices—friends with other accents, ways of speaking, or sound quality—the classifier generated incorrect or unreliable results.</p>
+        </div>
+      </section>
+      <section class="person">
+        <div class="persontext">
+          <h2>Ethical Implications</h2>
+          <p>Even a benevolent classifier poses larger ethical concerns. If this model were implemented in an actual application—e.g., tracking mood in a workplace or classroom? Classifying someone's tone as "negative" or "confused" could have significant implications, especially for those whose speech patterns don't meet the model's definition of "normal."
+              Buolamwini warns us not to act as though AI is magic. Algorithms are too frequently imbued with powers they do not require. The more we understand just how fragile and human-dependent these systems are, the more responsibly we can use them.
+              Our take-away is that the responsibility for the limitations of models lies with the developers. Transparency matters. Users should know what a model was trained on, what it cannot do, and who it may not be able to work for. This shift in perspective—shifting from building "solutions" to building responsible systems—is probably the most evocative Unmasking AI lesson.</p>
+        </div>
+      </section>
+      <section class="person">
+        <div class="persontext">
+          <h2>What Was Learned</h2>
+          <p>One of the most compelling conclusions from Unmasking AI is that exclusion is inscribed silently into the tools we make. As we struggled to train my own classifier, we appreciated how easy it is to overlook whose voices are being heard—and whose aren't. Buolamwini's example about facial recognition not recognizing Black women is a reminder that a lack of representation isn't technical—a human issue.
+We also very much resonated with the idea that transparency is an ethical imperative. Machine learning models can be black boxes, but they're designed by humans who are making choices—what data to train on, how to label it, and which outcomes to optimize for. Those choices shape the physical world.
+As we worked on this project, we kept returning to Buolamwini's call to be "an engineer of equity." Even with a playful model like my own, we wanted to think carefully about the assumptions programmed into the system. My model is for whom? What are the potential pitfalls? And how can we communicate its limitations clearly?
+Last but not least, Unmasking AI taught us that ethical design isn't feature add-ons or checkboxing—it's designing with care, listening to impacted communities, and recognizing that no technology is ever neutral.</p>
         </div>
       </section>
     </main>
 
     <!-- Footer -->
     <footer class="site-footer">
-      <p>&copy; 2025 Your Name. All rights reserved.</p>
+      <p>&copy; 2025 Arin Chandra, Yalitza Lopez, Aleena Zehra. All rights reserved.</p>
     </footer>
 
   </body>
