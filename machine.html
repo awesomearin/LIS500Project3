@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Interjection Classifier</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- p5.js + ml5.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/addons/p5.sound.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/ml5@0.12.2/dist/ml5.min.js"></script>
+</head>
+<body>
+<header class="site-header">
+      <h1>Interjection Machine</h1>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="machine.html">Our Machine</a></li>
+        </ul>
+      </nav>
+</header>
+
+  <main class="main-content">
+    <section class="intro-section">
+      <h2>Try Speaking!</h2>
+      <p>This model listens to short interjections and classifies them as <strong>positivity</strong>, <strong>negativity</strong>, or <strong>bewilderment</strong>. Try saying things like "yay!", "ugh!", or "huh?" out loud.</p>
+    </section>
+
+    <!-- Canvas will appear here -->
+    <div id="canvas-container" style="display: flex; justify-content: center;"></div>
+
+    <section class="intro-section">
+      <p>Model created using <a href="https://teachablemachine.withgoogle.com/" target="_blank">Teachable Machine</a> and integrated with <a href="https://ml5js.org" target="_blank">ml5.js</a>.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+      <p>&copy; 2025 Arin Chandra, Yalitza Lopez, Aleena Zehra. All rights reserved.</p>
+  </footer>
+
+  <!-- Your custom script -->
+  <script src="sketch.js"></script>
+</body>
+</html>
